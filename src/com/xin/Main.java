@@ -6,11 +6,13 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //stores the incrementing number
         int incrementingNumber = 1;
 
+        //Enter the string value to validate if it is palindrome or not.
         System.out.print("Enter string: ");
         Scanner sc = new Scanner(System.in);
-        String x = sc.next();
+        String x = sc.next(); //stores string
         String reverse = "";
         for (int i = x.length() - 1; i >= 0; i--){
             reverse = reverse + x.charAt(i);
@@ -19,7 +21,7 @@ public class Main {
         if (x.equals(reverse)){
             System.out.println(x + " is Palindrome");
         } else {
-            System.out.println("Not Palindrome");
+            System.out.println(x + " is not Palindrome");
         }
 
         System.out.print("Enter a number: ");
