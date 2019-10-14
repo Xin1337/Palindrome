@@ -6,16 +6,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //stores the incrementing number
+        // incrementing number
         int incrementingNumber = 1;
 
-        //Enter the string value to validate if it is palindrome or not.
+        // enters the string
         System.out.print("Enter string: ");
         Scanner sc = new Scanner(System.in);
-        String x = sc.next(); //stores string
+        String x = sc.next(); // stores string
         String reverse = "";
         for (int i = x.length() - 1; i >= 0; i--){
-            reverse = reverse + x.charAt(i);
+            reverse = reverse + x.charAt(i); // main
         }
 
         if (x.equals(reverse)){
@@ -28,8 +28,8 @@ public class Main {
         int test = sc.nextInt();
 
 
-        for (int i = 1; i <= test; i++){
-            for (int j = 1; j <= i; j++) {
+        for (int i = 1; i <= test; i++){ // adds new line
+            for (int j = 1; j <= i; j++) { // increments numbers
                 System.out.print(incrementingNumber + " ");
                 incrementingNumber++;
             }
