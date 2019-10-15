@@ -12,10 +12,12 @@ public class Main {
         // enters the string
         System.out.print("Enter string: ");
         Scanner sc = new Scanner(System.in);
-        String x = sc.next(); // stores string
+        // stores string
+        String x = sc.next();
         String reverse = "";
         for (int i = x.length() - 1; i >= 0; i--){
-            reverse = reverse + x.charAt(i); // main
+            // main
+            reverse = reverse + x.charAt(i);
         }
 
         if (x.equals(reverse)){
@@ -28,8 +30,10 @@ public class Main {
         int test = sc.nextInt();
 
 
-        for (int i = 1; i <= test; i++){ // adds new line
-            for (int j = 1; j <= i; j++) { // increments numbers
+        // adds new line
+        for (int i = 1; i <= test; i++){
+            // increments numbers
+            for (int j = 1; j <= i; j++) {
                 System.out.print(incrementingNumber + " ");
                 incrementingNumber++;
             }
