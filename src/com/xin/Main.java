@@ -21,8 +21,10 @@ public class Main {
         }
 
         if (x.equals(reverse)){
+            //prints if the string is palindrome
             System.out.println(x + " is Palindrome");
         } else {
+            //prints if the string isn't palindrome
             System.out.println(x + " is not Palindrome");
         }
 
@@ -31,7 +33,7 @@ public class Main {
 
 
         // adds new line
-        for (int i = 1; i <= test; i++){
+            for (int i = 1; i <= test; i++){
             // increments numbers
             for (int j = 1; j <= i; j++) {
                 System.out.print(incrementingNumber + " ");
